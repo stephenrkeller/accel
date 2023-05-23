@@ -10,7 +10,7 @@
 
 
 readAccel <- function(x){
-  df <- read.table(x, skip=11, sep=",", fill=TRUE, row.names=NULL)
+  df <- read.table(x, skip=10, sep=",", fill=TRUE, row.names=NULL)
   df <- na.omit(df)
   colnames(df) <- c("sample","x","y","z","temp","sec","Vbatt")
   return(df)
